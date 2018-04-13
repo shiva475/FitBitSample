@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FLAnimatedImage/FLAnimatedImageView.h>
+
 
 @interface ViewController : UIViewController
 
+@property(nonatomic,weak) IBOutlet FLAnimatedImageView *imageView;
 
+@property(nonatomic,weak) IBOutlet UIImageView *imageView1;
+
+- (IBAction)actionLogin:(UIButton *)sender;
+- (IBAction)actionGetProfile:(UIButton *)sender;
+- (IBAction)actionRevokeAccess:(UIButton *)sender;
 @end
 
